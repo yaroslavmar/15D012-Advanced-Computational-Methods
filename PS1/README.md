@@ -1,4 +1,4 @@
-## Arguments for dataGen function:
+## Arguments for genData function:
 
 - obs0: number of observation of group 0
 - obs1: number of observation of group 1
