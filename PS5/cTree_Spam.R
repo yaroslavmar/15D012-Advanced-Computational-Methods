@@ -44,7 +44,7 @@ error.ctree.test<-rep(NA,length(nodes))
 error.ctree.train<-rep(NA,length(nodes))
 
 for(k in 1:length(nodes)){
-  tree<-ctree(formula ,train, loss="ME", depth=nodes[k], minPoints=20, test=test)
+  tree<-cTree(formula ,train, loss="ME", depth=nodes[k], minPoints=20, test=test)
   acc.ctree.test[k]<-mean(tree$predLabels==test$V58)
   acc.ctree.train[k]<-mean(tree$predLabels.train==test$V58)
 }
