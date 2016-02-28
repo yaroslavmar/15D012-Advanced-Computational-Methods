@@ -104,7 +104,7 @@ depth<-3
 minPoints<-30
 
 # Function: Creates a decision tree
-ctree<-function(formula, data, loss, depth, minPoints, test){
+cTree<-function(formula, data, loss, depth, minPoints, test){
   
   #Data
   labels<-get.vars(lhs(formula)) #label
